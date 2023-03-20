@@ -18,3 +18,5 @@ If can be useful there are also these two repository:
 The former is the original project, the latter is mine and I made some changes to the code to deploy it in R2Lab.
 
 Testing the two versions on my laptop, I used wireshark to verify if the code is executed well and if the packets is corrupted or not and it seems there aren't errors.
+
+I attached a picture of wireshark to show the output.
