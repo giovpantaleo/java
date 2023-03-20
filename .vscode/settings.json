@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        //"C:\\Users\\giova\\Downloads\\json-simple-1.1.1.jar"
+        "C:\\Users\\giova\\Downloads\\json-20230227.jar"
+        //"/home/gpantaleo/R2LAB/test2/V2/json-20230227.jar"
+    ]
+}
