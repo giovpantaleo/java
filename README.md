@@ -8,7 +8,8 @@ This happens when I try to deserialize the data. If I use BufferedReader to read
 
 Just to contextualize the code:
 - the client is called observer, it performs measurements in the network, it transforms these measurements in a variable of type string and it send this string to the aggregator.
-- the server is called aggregator, it reads this string and initializes an instance of the class measure.
+- the server is called aggregator, it reads this string and initializes an instance of the class measure. The information obtained, are collected in a database. Then an application is deployed on port 5001 (RESTAggregator), it allows to retrieve data from the database and to use it by third-part applications.
+
 In the code provided I put also the class Measure.
 
 If can be useful there are also these two repository:
@@ -19,4 +20,4 @@ The former is the original project, the latter is mine and I made some changes t
 
 Testing the two versions on my laptop, I used wireshark to verify if the code is executed well and if the packets is corrupted or not and it seems there aren't errors.
 
-I attached a picture of wireshark to show the output.
+I attached a picture of wireshark to show the output, and also the reference paper that I used to develop the tool.
