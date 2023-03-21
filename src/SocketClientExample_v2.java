@@ -43,17 +43,17 @@ public class SocketClientExample_v2 {
 
 //            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             StringBuffer jsonString = new StringBuffer();
-            System.out.println("json string initializzato"); //d
+            System.out.println("json string init"); //d
 
             String line;
             while ((line = br.readLine()) != null) {
                 jsonString.append(line);
             }
             br.close();
-            System.out.println(" br chiuso"); //
+            System.out.println(" br closed"); //
 
         //connection.disconnect();
-            System.out.println("connection chiusa"); //
+            System.out.println("connection closed"); //
         } catch (Exception e) {
             e.printStackTrace();
         }

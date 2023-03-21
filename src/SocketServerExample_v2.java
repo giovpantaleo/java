@@ -39,40 +39,12 @@ public class SocketServerExample_v2 {
                 }
             }
             */
-
-            System.out.println("input stream get ok"); //
-
-            InputStreamReader inpst1 = new InputStreamReader(isr);
-            System.out.println("input stream read get ok"); //
-
-            BufferedReader br = new BufferedReader(inpst1);
-            System.out.println("br ended"); //
-
-//            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuffer jsonString = new StringBuffer();
-            System.out.println("json string initializzato"); //d
-
-            String line;
-            while ((line = br.readLine()) != null) {
-                jsonString.append(line);
-                System.out.println(line);
-            }
-            br.close();
-            System.out.println(" br chiuso" + jsonString); //
-
-        //connection.disconnect();
-
-
-
-
-
-
-/* 
+ 
             ObjectInputStream mapInputStream = new ObjectInputStream(isr);
             System.out.println(mapInputStream);
             Measure measure = (Measure) mapInputStream.readObject();
             System.out.println(measure);
-*/
+
     }
 }
 

@@ -30,27 +30,27 @@ public class SocketClientExample_v1 {
            OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
             writer.write(payloadPOST);
             writer.close();
-            System.out.println("writer finito"); 
+            System.out.println("writer ended"); 
             System.out.println(connection.toString());
             InputStream inpst = connection.getInputStream();
             System.out.println("input stream get ok"); 
             InputStreamReader inpst1 = new InputStreamReader(inpst);
             System.out.println("input stream read get ok"); 
             BufferedReader br = new BufferedReader(inpst1);
-            System.out.println("br finito"); 
+            System.out.println("br "); 
 //            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             StringBuffer jsonString = new StringBuffer();
-            System.out.println("json string initializzato");
+            System.out.println("json string init");
 
             String line;
             while ((line = br.readLine()) != null) {
                 jsonString.append(line);
             }
             br.close();
-            System.out.println(" br chiuso"); 
+            System.out.println(" br "); 
 
         //connection.disconnect();
-            System.out.println("connection chiusa"); 
+            System.out.println("connection closed"); 
         } catch (Exception e) {
             e.printStackTrace();
         }
